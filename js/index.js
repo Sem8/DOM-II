@@ -150,6 +150,16 @@ preventRefresh.forEach((eachItem) => {
     e.preventDefault();
 })
 });
+
+// Greensock animations
+
+TweenMax.to(".logo-heading", 2, {x:120, ease:Elastic.easeOut,
+    backgroundColor:'#00FFFF', 
+fontSize: 20});
+
+TweenMax.to(".intro img", 2, {rotation:360, scale:0.8});
+TweenMax.staggerFrom('.nav-link', 0.5, {opactiy:0, y:200, delay:0.5}, 0.2)
+
     
 
 
