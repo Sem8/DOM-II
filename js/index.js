@@ -27,7 +27,7 @@ thoughtBtn.addEventListener('dblclick', thoughtTypeWriter);
 // let textContent = document.querySelectorAll('.text-content p');
 // textContent.addEventListener('mouseover', )
 
-// swap text
+// changing background
 let contentSection = document.querySelector('.content-section');
 function changeBackground(e) {    
     contentSection.style.background = "rgb("+e.offsetX+","+e.offsetY+",40)";
@@ -41,11 +41,32 @@ function resetBackground() {
 
 let swapTextBtn = document.getElementById('swap-text');
 swapTextBtn.style.background = '#00FFFF';
-swapTextBtn.style.borderRadius = '50px';
+swapTextBtn.style.borderRadius = '20px';
 swapTextBtn.style.fontSize = '2rem';
 
 swapTextBtn.addEventListener('mouseover', changeBackground);
 swapTextBtn.addEventListener('mouseout', resetBackground);
+
+// disappearing div
+let containerDiv = document.querySelector('.home');
+console.log(containerDiv);
+
+function disappearDiv() {    
+    containerDiv.style.display = 'none';   
+}
+
+let disappearBtn = document.getElementById('disappear');
+disappearBtn.style.background = '#00FFFF'
+disappearBtn.style.borderRadius = '20px';
+disappearBtn.style.fontSize = '2rem';
+
+disappearBtn.addEventListener('mousedown', disappearDiv);
+
+// appear div
+
+
+
+
 
 
 
